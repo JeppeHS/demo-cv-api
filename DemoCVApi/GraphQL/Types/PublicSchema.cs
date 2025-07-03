@@ -10,13 +10,6 @@ namespace DemoCVApi.GraphQL.Types
         {
             // Person
             Query = provider.GetRequiredService<PersonsQuery>();
-
-
-            // Company
-
-
-            //
-
         }
     }
 }
