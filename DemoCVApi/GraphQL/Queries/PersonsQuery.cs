@@ -8,7 +8,7 @@ namespace DemoCVApi.GraphQL.Queries
     {
         public PersonsQuery()
         {
-            Field<ListGraphType<PersonType>>(
+            Field<ListGraphType<NonNullGraphType<PersonType>>>(
                 "persons",
                 resolve: context => PersonRepository.GetPersons()
             );
